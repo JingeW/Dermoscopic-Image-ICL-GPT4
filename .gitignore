@@ -1,0 +1,10 @@
+# Ignore image files
+*.jpg
+*.JPG
+
+# Ignore JSON files
+*.json
+
+# Ignore csv files
+*.csv
+*.txt
