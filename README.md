@@ -14,7 +14,7 @@
 
 ```
 .
-├── data                                 # Contains subdirecotories for processed datas
+├── data                                 # Contains subdirectories for processed data
 │   ├── all
 │   ├── all_resized
 │   └── all_resized_label
@@ -25,28 +25,28 @@
 │   ├── mm_resized
 │   └── mm_resized_label
 │   └── selected_images.xlsx            # Image names
-├── RAW                                 # Contains raw data download from ISCI Archive
-├── result                              # Results from running API_calling will be stored here as .json file
+├── RAW                                 # Contains raw data downloaded from ISCI Archive
+├── result                              # Results from running API_calling will be stored here as .json files
 │   ├── 1_shot_v3.0_KNN
 │   ├── 1_shot_v3.0_Random
 │   └── ...
 ├── API_calling.py                       # Call OpenAI API for classification
 ├── data_labeling.py                     # Add label to the resized data
-├── data_resizing.py                     # Resize the data with original aspect ration
+├── data_resizing.py                     # Resize the data with the original aspect ratio
 ├── data_selection.py                    # Select data from RAW
 ├── README.md                            
-├── result_analysis.py                   # Compute stats for AI generated content
+├── result_analysis.py                   # Compute stats for AI-generated content
 ├── result_visualization.ipynb           # Visualize the results
 └── topK_finding.py                      # Find the top-k similar images to the query image
 ```
 
 ## Data
-All the dermoscopic images are download from [ISIC Archive](https://www.isic-archive.com/)
+All the dermoscopic images are downloaded from [ISIC Archive](https://www.isic-archive.com/)
 
-<img src="Figs/ISIC Archive.PNG" width="600">
+<img src="Figs/ISIC Archive.PNG">
 
 ## ICL with GPT4v
-<img src="Figs/Flow-chart.png" width="500">
+<img src="Figs/Flow-chart.png">
 
 #### General working flow:
 1. Download the raw data from ISIC Archive
@@ -63,22 +63,22 @@ All the dermoscopic images are download from [ISIC Archive](https://www.isic-arc
    - run *python result_visualization.ipynb*
 
 ## Zero-shot vs Few-shot
-GPT4v natually used the "ABCD" rule for dermoscopic image classification.
+GPT4v naturally used the "ABCD" rule for dermoscopic image classification.
 
-Domain knowledge didn't applied corretly in the zero-shot learning:
+Domain knowledge didn't apply correctly in the zero-shot learning:
 
-<img src="Figs/zero-shot.PNG" width="500">
+<img src="Figs/zero-shot.PNG" width="600">
 
 \
-Domain knowledge corretly used in the few-shot learning:
+Domain knowledge correctly used in the few-shot learning:
 
-<img src="Figs/few-shot.PNG" width="500">
+<img src="Figs/few-shot.PNG" width="600">
 
-## Pick reference example with KNN
+## Pick reference examples with KNN
 The reference image was picked randomly for few-shot learning.
 To determine if more representative examples would help GPT4V make the correct decision, we adopted the KNN similarity to find the top K similar images in each category serving as the references.
 
-<img src="Figs/KNN_sim.PNG" width="500">
+<img src="Figs/KNN_sim.PNG">
 
 ## Ablation test on color
 To determine how the color affects the classification result, we carried out an ablation test on color.
