@@ -46,7 +46,7 @@ All the dermoscopic images are download from [ISIC Archive](https://www.isic-arc
 <img src="Figs/ISIC Archive.PNG" width="600">
 
 ## ICL with GPT4v
-<img src="Figs/Flow-chart.PNG" width="500">
+<img src="Figs/Flow-chart.png" width="500">
 
 #### General working flow:
 1. Download the raw data from ISIC Archive
