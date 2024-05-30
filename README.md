@@ -93,11 +93,11 @@ Few-show learning easily boosts the classification accuracy from around 50% to a
 
 Surprisingly, the KNN didn't help with the accuracy. Our guess is the information provided by the representative samples has been canceled out by each other.
 
-### Impact of different combinations of kNN and random sampling applied to the two reference sets on GPT-4V's dermoscopic classification performance
+#### Different combinations of kNN and random sampling applied to the two reference sets on GPT-4V's dermoscopic classification performance
 
-| **Sampling strategy** | **Performance metrics (%)** | **Sensitivity** | **Specificity** | **Accuracy** |
+| **Sampling strategy** | **Performance metrics (%)** | **Sensitivity**  | **Specificity** | **Accuracy** |
 |-----------------------|-----------------------------|------------------|-----------------|--------------|
-| **Melanoma images**   | **Benign images**           |                  |                 |              |
+| **Melanoma examples** | **Benign examples**         |                  |                 |              |
 | Random                | Random                      | 59.2±2.6         | 82.8±3.0        | 71.1±1.5     |
 | Random                | kNN                         | 54.7±2.0 ↓       | 89.2±4.1 ↑      | 72.1±2.6     |
 | kNN                   | Random                      | 76.3±1.0 ↑       | 50.0±1.8 ↓      | 63.0±1.2     |
