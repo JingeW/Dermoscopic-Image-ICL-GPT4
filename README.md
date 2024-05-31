@@ -14,7 +14,7 @@ This repository contains code and data for performing in-context learning (ICL) 
 6. openai
 7. base64
 
-## Repository Structure:
+## Repository Structure
 
 ```
 .
