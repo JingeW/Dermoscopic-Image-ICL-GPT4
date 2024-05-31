@@ -85,7 +85,7 @@ Domain knowledge correctly used in the few-shot learning:
 
 <img src="Figs/few-shot.PNG" width="600">
 
-## Pick reference examples with KNN
+## Select reference examples with KNN
 The reference image was picked randomly for few-shot learning.
 To determine if more representative examples would help GPT4V make the correct decision, we adopted the KNN similarity to find the top K similar images in each category serving as the references.
 
