@@ -105,6 +105,6 @@ Few-show learning easily boosts the classification accuracy from around 50% to a
 Surprisingly, the KNN didn't help with the accuracy.\
 We explored various combinations of kNN and random sampling applied to the two reference sets, using one-shot learning with random sampling as our baseline for simplicity
 
-<img src="Figs/KNN_valid.PNG">
+<img src="Figs/KNN_valid.PNG" width="900">
 
 As an important pattern used in Skin Cancer diagnosis, color has a significant influence on the results.
