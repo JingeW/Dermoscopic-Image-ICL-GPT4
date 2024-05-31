@@ -102,17 +102,9 @@ Few-show learning easily boosts the classification accuracy from around 50% to a
 
 <img src="Figs/result.PNG" width="500">
 
-Surprisingly, the KNN didn't help with the accuracy. Our guess is the information provided by the representative samples has been canceled out by each other.
+Surprisingly, the KNN didn't help with the accuracy.\
+We explored various combinations of kNN and random sampling applied to the two reference sets, using one-shot learning with random sampling as our baseline for simplicity
 
-#### Different combinations of kNN and random sampling applied to the two reference sets on GPT-4V's dermoscopic classification performance
+<img src="Figs/KNN_valid.PNG">
 
-| **Sampling strategy** | **Performance metrics (%)** | **Sensitivity**  | **Specificity** | **Accuracy** |
-|-----------------------|-----------------------------|------------------|-----------------|--------------|
-| **Melanoma examples** | **Benign examples**         |                  |                 |              |
-| Random                | Random                      | 59.2±2.6         | 82.8±3.0        | 71.1±1.5     |
-| Random                | kNN                         | 54.7±2.0 ↓       | 89.2±4.1 ↑      | 72.1±2.6     |
-| kNN                   | Random                      | 76.3±1.0 ↑       | 50.0±1.8 ↓      | 63.0±1.2     |
-| kNN                   | kNN                         | 69.4±1.3         | 72.0±3.6        | 70.7±1.4     |
-
-\
 As an important pattern used in Skin Cancer diagnosis, color has a significant influence on the results.
