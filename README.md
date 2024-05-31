@@ -1,5 +1,5 @@
 # Dermoscopic Image In-Context Learning (ICL) with GPT4v
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
 
 This repository contains code and data for performing in-context learning (ICL) on dermoscopic images using GPT-4V. The project aims to classify dermoscopic images as melanoma or benign using few-shot learning techniques.
 
