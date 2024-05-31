@@ -1,4 +1,8 @@
 # Dermoscopic Image In-Context Learning (ICL) with GPT4v
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains code and data for performing in-context learning (ICL) on dermoscopic images using GPT-4V. The project aims to classify dermoscopic images as melanoma or benign using few-shot learning techniques.
+
 <img src="Figs/res_vis_example.PNG">
 
 ## Requirements
@@ -41,9 +45,16 @@
 ```
 
 ## Data
-All the dermoscopic images are downloaded from [ISIC Archive](https://www.isic-archive.com/)
+All the dermoscopic images are downloaded from [ISIC Archive](https://www.isic-archive.com/).
 
 <img src="Figs/ISIC Archive.PNG">
+
+## Disclaimer
+This project is for academic research purposes only. The code in this repository is released under the MIT License.
+If you use this repository or the data provided, please cite the ISIC Archive.
+- [![License: CC0-1.0](https://licensebuttons.net/l/zero/1.0/80x15.png)](http://creativecommons.org/publicdomain/zero/1.0/)
+- [![License: CC BY 4.0](https://licensebuttons.net/l/by/4.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/)
+- [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 
 ## ICL with GPT4v
 <img src="Figs/Flow-chart.png">
@@ -89,7 +100,7 @@ To determine how the color affects the classification result, we carried out an 
 
 Few-show learning easily boosts the classification accuracy from around 50% to a 75% level with only 2 or 3 examples.
 
-<img src="Figs/result.PNG" width="500">\
+<img src="Figs/result.PNG" width="500">
 
 Surprisingly, the KNN didn't help with the accuracy. Our guess is the information provided by the representative samples has been canceled out by each other.
 
