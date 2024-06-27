@@ -29,7 +29,7 @@ def main(args):
 
     # Extract image IDs and append file extension
     ID_mm = [f"{i}.jpg" for i in df_mm['ISIC ID'].to_list()]
-    ID_bn = [f"{i}.jpg" for i in df_bn['ISIC ID'].to_exists_list()]
+    ID_bn = [f"{i}.jpg" for i in df_bn['ISIC ID'].to_list()]
     ID_all = ID_mm + ID_bn
 
     # Create directories
