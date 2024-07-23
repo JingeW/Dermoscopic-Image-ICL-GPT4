@@ -29,7 +29,7 @@ def process_images(source_dir, target_dir, max_size):
     """Process all images in the directory."""
     make_dir(target_dir)
     for image_name in os.listdir(source_dir):
-        if image_name.lower().endswith('.jpg', '.jpeg', '.png'):
+        if image_name.lower().endswith(('.jpg', '.jpeg', '.png')):
             image_path = os.path.join(source_dir, image_name)
             resize_image(image_path, target_dir, max_size)
         else:
