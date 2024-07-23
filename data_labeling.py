@@ -22,7 +22,10 @@ def add_label(image, label):
     except IOError:
         font = ImageFont.load_default()
         print("Arial font not found, using default font.")
-    text_width, text_height = draw.textsize(label, font=font)
+        
+    text_width = draw.textlength(label, font=font)
+    text_height = font.size  # Approximate height based on font size
+
     draw.text(((new_image.size[0] - text_width) / 2, (label_height - text_height) / 2), label, font=font, fill=(0, 0, 0))
     return new_image
 
@@ -44,7 +47,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Add labels to images for few-shot learning.")
     parser.add_argument('--source_dir', type=str, default='./data/mm_resized', help='Source directory of images.')
     parser.add_argument('--target_dir', type=str, default='./data/mm_resized_label', help='Target directory for labeled images.')
-    parser.add_def_file_argument('--label', type=str, default='Melanoma', help='Label to add to images.')
+    parser.add_argument('--label', type=str, default='Melanoma', help='Label to add to images.')
     args = parser.parse_args()
 
     process_images(args.source_dir, args.target_dir, args.label)
