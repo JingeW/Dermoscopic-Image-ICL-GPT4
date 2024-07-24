@@ -21,13 +21,12 @@ This repository contains code and data for performing in-context learning (ICL) 
 ├── data                                 # Contains subdirectories for processed data
 │   ├── all
 │   ├── all_resized
-│   └── all_resized_label
 │   ├── bn
 │   ├── bn_resized
-│   └── bn_resized_label
+│   ├── bn_resized_label
 │   ├── mm
 │   ├── mm_resized
-│   └── mm_resized_label
+│   ├── mm_resized_label
 │   └── selected_images.xlsx            # Image names
 ├── RAW                                 # Contains raw data downloaded from ISCI Archive
 ├── result                              # Results from running API_calling will be stored here as .json files
