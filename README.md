@@ -58,7 +58,7 @@ If you use the data provided, please cite the ISIC Archive.
 ## ICL with GPT4v
 <img src="Figs/Flow-chart.png">
 
-#### General working flow:
+#### General Workflow:
 1. Download the raw data from ISIC Archive
 2. Select data:
    - run *python data_selection.py --[options]*
