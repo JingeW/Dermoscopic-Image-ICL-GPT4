@@ -3,7 +3,7 @@
 
 This repository contains code and data for performing in-context learning (ICL) on dermoscopic images using GPT-4V. The project aims to classify dermoscopic images as melanoma or benign using few-shot learning techniques.
 
-📃 [Read the Paper](https://www.nature.com/articles/s41698-024-00576-z)
+📃 [Read the Paper](https://www.jaad.org/article/S0190-9622(24)02572-6/pdf)
 
 <img src="Figs/res_vis_example.PNG">
 
